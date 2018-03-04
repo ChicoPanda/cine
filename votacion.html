@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/js1.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link href="css/estiloPaginaCompras.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pago</title>
+    </head>
+
+    <body>
+        <div id="cabezera">
+            <a href="index.html" > 
+                <img tabindex="1" src="img/logo.png" id="logo" alt="logo de la empresa"  > 
+            </a>
+            <a href="index.html"> 
+                <span id="titulo">CinesTecia.com</span>
+            </a>
+            <div id="ofertaCartelera">
+                <span tabindex="2" id="estrenos">Estrenos</span>
+                <span tabindex="3" id="ofertas">Ofertas</span>
+                <span tabindex="4" id="contacto">Contacto</span>
+            </div>
+            <div id="buscar">
+                <input id="textoBuscar" title="Campo de texto para ingresar la pelicula deseada" type="text" placeholder="Buscar pelicula deseada">
+                <input id="botonBuscar" value="Buscar" type="button">
+            </div>
+
+            <div id="botonesLoginRegistrarse">
+                <input id="login" value="Login" type="button">
+                <input id="registrarse" value="Registrarse" type="button">
+            </div>
+        </div>
+        <div id="Gracias" style="margin:auto; padding:40px;"></div>
+        <div id="panelPeliculas">
+
+            <h1 id="tituloCartelera">Informacion</h1>
+
+            <div id="pelicula1">
+
+            </div>
+
+            <div id="informacion">
+
+
+            </div>
+            <div tabindex="0" id="panelito">
+                <h2>Page</h2>
+            </div>
+
+            <div class="container">
+                <form>
+                    <h1>
+                        Proceso de compra
+                    </h1>
+                    <div class="form-help">
+                    </div>
+
+                    <div class="form-group">
+                        <input id ="trajeta" type="text" required="required"/>
+                        <label for="textarea" class="control-label">Tarjeta de credito</label><i class="bar"></i>
+                    </div>
+                    <div class="form-group">
+                        <input id="dni" type="text" required="required"/>
+                        <label for="input" class="control-label">DNI</label><i class="bar"></i>
+                    </div>
+
+                    <div class="form-radio">
+                        <div class="radio">
+                            <label>
+                                <input id="normal" type="radio" name="radio" checked="checked"/><i class="helper"></i>Entrada normal: 5,00€
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input id="vip" type="radio" name="radio"/><i class="helper"></i>Entrada vip: 7,00€
+                            </label>
+                        </div>
+
+                    </div>
+                    
+                    Hora de la compra: <br><span id="hora"><br><script>var fecha = Date(); document.getElementById("hora").innerHTML=fecha</script></span>
+                    
+                </form>
+                <div class="button-container">
+                    <button type="button" class="button" id="candela"><span>Comprar</span></button>
+                </div>
+            </div>
+
+            <div tabindex="0" id="fallo">
+                Ha ingresado datos erroneos, recuerde que la votacion es de 1 a 10
+            </div>
+
+
+
+        </div> 
+        
+    </body>
+
+</html>
